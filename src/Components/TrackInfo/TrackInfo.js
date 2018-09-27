@@ -29,8 +29,8 @@ class TrackInfo extends Component{
         <AppText type={'trackInfoName'}>
           {trackInfo.title}
         </AppText>
-        <AppText type={'trackInfoArtist'}>
-          {trackInfo.artist}
+        <AppText type={'trackInfoAlbum'}>
+          Artist: {trackInfo.artist}
         </AppText>
         <AppText type={'trackInfoAlbum'}>
           Album: {trackInfo.album}

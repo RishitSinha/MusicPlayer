@@ -9,6 +9,7 @@ import TrackList from './Components/TrackList/TrackList';
 import PlayerInterface from './Components/Player/PlayerInterface';
 import Player from './Components/Player/Player';
 import TrackInfo from './Components/TrackInfo/TrackInfo';
+import PlayerInterfaceCondensed from './Components/Player/PlayerInterfaceCondensed';
 
 class App extends Component{
   componentDidMount() {
@@ -26,6 +27,7 @@ class App extends Component{
               <Route path="/player" component={PlayerInterface} />
               <Route path="/info" component={TrackInfo} />
             </Switch>
+            <Route path="/" component={PlayerInterfaceCondensed} />
           </BackButton>
         </View>
       </NativeRouter>

@@ -11,6 +11,15 @@ const styles = StyleSheet.create({
     width: 90*vw,
     marginLeft: 10*vw,
   },
+  condensedTrackControls: {
+    flexDirection: 'row',
+    width: 100*vw,
+    marginLeft: 0*vw,
+    transform: [
+      {scaleX: 0.8},
+      {scaleY: 0.8},
+    ],
+  },
   seekControls: {
     width: 90*vw,
     marginLeft: 10*vw,
@@ -96,6 +105,15 @@ const styles = StyleSheet.create({
     paddingLeft: 10*vw,
     marginTop: 4*vh,
     marginBottom: 6*vh,
+  },
+  trackInfoCondensed: {
+    paddingLeft: 10*vw,
+  },
+  condensedPlayer: {
+    height: 17.5*vh,
+    width: 100*vw,
+    justifyContent: 'space-around',
+    backgroundColor: '#4449b1',
   },
 });
 

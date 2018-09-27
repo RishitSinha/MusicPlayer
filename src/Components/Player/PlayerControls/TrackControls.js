@@ -9,11 +9,15 @@ import {playNext, playPrev} from "../../../Redux/tracks/nowPlaying";
 
 class TrackControls extends Component{
   render(){
-    const {togglePlay, playNext, playPrev, playerConfig, nowPlaying} = this.props;
+    const {togglePlay, playNext, playPrev, playerConfig, nowPlaying, condensed} = this.props;
     const {playing, repeat, shuffle} = playerConfig;
     const {played=[], playlist, playing: currentTrack} = nowPlaying;
     return(
-      <View style={styles.trackControls}>
+      <View style={
+        condensed
+        ? styles.condensedTrackControls
+        : styles.trackControls
+      }>
         <TouchableNativeFeedback
           disabled={!played.length}
           onPress={() => playPrev()}

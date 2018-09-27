@@ -39,17 +39,31 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#4449b1',
   },
+  trackNameLight: {
+    fontSize: 5*vw,
+    // fontWeight: 'bold',
+    color: '#fff',
+  },
   artistName: {
     fontSize: 4.5*vw,
     color: '#4449b1',
     marginLeft: 0.5*vw,
     fontWeight: "200",
   },
+  artistNameLight: {
+    fontSize: 4*vw,
+    color: '#fff',
+    marginLeft: 0.5*vw,
+    fontWeight: "100",
+    opacity: 0.5,
+  },
   trackInfoName: {
     fontWeight: 'bold',
     color: '#4449b1',
     fontSize: 7.5*vw,
     marginLeft: 10*vw,
+    marginTop: -3*vh,
+    marginBottom: 2*vh,
   },
   trackInfoArtist: {
     color: '#4449b1',
@@ -58,15 +72,18 @@ const styles = StyleSheet.create({
     marginBottom: 2.5*vh,
   },
   trackInfoGenre: {
-    fontSize: 5.5*vw,
+    fontSize: 5*vw,
+    marginTop: vh,
     marginLeft: 10*vw,
   },
   trackInfoAlbum: {
-    fontSize: 5.5*vw,
+    fontSize: 5*vw,
+    marginTop: vh,
     marginLeft: 10*vw,
   },
   trackInfoTrackNumber: {
-    fontSize: 5.5*vw,
+    fontSize: 5*vw,
+    marginTop: vh,
     marginLeft: 10*vw,
   },
 });
